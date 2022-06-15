@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTÃO 10</title>
+    <style>
+        form{
+            background-color: rgb(76, 230, 230);
+            width: 400px;
+            height: 50px;
+            padding: 30px 10px;
+        }
+
+        button{
+            background-color: rgb(30, 206, 206);
+            border: none;
+            width: 80px;
+            height: 40px;
+            border-radius: 3px ;
+            text-transform: uppercase;
+            font-weight: bold;
+            transform: scale(1);
+            transition: 3ms ease-out;
+        }
+
+        button:hover{
+            background-color: rgb(4, 216, 216);
+            box-shadow: 2px 2px 2px rgba(1,1,1, 0.5);
+            transform: scale(1.03);
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="sabor">Sabor do Sorvete:</label>
+        <input type="text"  id="sabor" name="sabor">
+    </form>
+    <button  onclick="sabor_()" id="sabor_do_sorvete">Enviar</button>
+</body> 
+
+<script>
+        function sabor_(){
+            let sorvete_de_chocolate=document.getElementById('sabor');
+            if (sorvete_de_chocolate.value ==="chocolate"){
+                alert('Amo sorvete de chocolate!');
+             } else{
+                alert('Prefiro outros sabores!')
+             }
+        }
+    </script>
+
+</html>

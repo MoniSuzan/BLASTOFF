@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 3</title>
+    <style>
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:100px;
+        }
+        #button_click{
+            background-color: rgba(35, 214, 131, 0.74);
+            border: none;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            font-size: 20pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 2px solid rgb(1, 39, 39);
+        }
+        #button_click:hover{
+            background-color: rgb(66, 245, 245);
+            box-shadow: 2px 2px 2px rgba(1, 22, 12, 0.74);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(2, 41, 65);
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button id="button_click" onclick="clicou();"><a href="#">Clique Aqui</a></button>
+    </div>
+    <script>
+        function clicou(){
+            alert('Você clicou aqui!')
+
+        }
+    </script>
+</body>
+</html>
